@@ -6,7 +6,7 @@ const ObjectId = Schema.ObjectId;
 const course = new Schema({
   name: { type: 'string', required: true },
   description: { type: 'string', maxLength: 255 },
-  image: Date,
+  image: {type: 'string'},
   createAt: { type: Date, default: Date.now() },
   updateAt: { type: Date, default: Date.now() },
 });
