@@ -4,7 +4,7 @@ const chokidar = require("chokidar");
 const path = require("path");
 
 const SCSS_PATH = path.join(__dirname, "./resource/scss/");
-const CSS_PATH = path.join(__dirname, "./resource/public/css/");
+const CSS_PATH = path.join(__dirname, "./public/css/");
 
 const compileSass = (filePath) => {
   const outFile = path.join(CSS_PATH, "app.css");
