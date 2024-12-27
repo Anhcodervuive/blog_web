@@ -1,7 +1,7 @@
 class SiteController {
-  Home(req, res) {
-    return res.render("home");
-  }
+    Home(req, res) {
+        return res.render('home')
+    }
 }
 
-module.exports = new SiteController();
+module.exports = new SiteController()

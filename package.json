@@ -5,19 +5,26 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src/index.js",
-    "debug": "nodemon --inspect src/index.js"
+    "debug": "nodemon --inspect src/index.js",
+    "format-code": "lint-staged"
   },
   "author": "",
   "license": "ISC",
   "description": "",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --write"
+  },
   "dependencies": {
     "chokidar": "^4.0.3",
     "express": "^4.21.2",
     "express-handlebars": "^8.0.1"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.9",
+    "prettier": "^3.4.2",
     "sass": "^1.83.0"
   }
 }
