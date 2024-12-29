@@ -26,9 +26,9 @@ class CourseController {
 
     async store(req, res, next) {
         try {
-            const formData = req.body;
-            const course = await Course.create(formData);
-            res.redirect(301, "/");
+            const formData = req.body
+            const course = await Course.create(formData)
+            res.redirect(301, '/')
         } catch (error) {
             console.error(error)
             res.status(500).send('Error occurred while creating course')
