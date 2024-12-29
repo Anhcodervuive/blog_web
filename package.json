@@ -1,38 +1,38 @@
 {
-    "name": "express",
-    "version": "1.0.0",
-    "main": "src/index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "nodemon src/index.js",
-        "debug": "nodemon --inspect src/index.js",
-        "format-code": "lint-staged",
-        "prepare": "husky install"
-    },
-    "author": "",
-    "license": "ISC",
-    "description": "",
-    "lint-staged": {
-        "src/**/*.{js,json,scss}": "prettier --write"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "dependencies": {
-        "chokidar": "^4.0.3",
-        "express": "^4.21.2",
-        "express-handlebars": "^8.0.1",
-        "mongoose": "^8.9.2",
-        "mongoose-slug-updater": "^3.3.0"
-    },
-    "devDependencies": {
-        "husky": "^9.1.7",
-        "lint-staged": "^15.2.11",
-        "morgan": "^1.10.0",
-        "nodemon": "^3.1.9",
-        "prettier": "^3.4.2",
-        "sass": "^1.83.0"
+  "name": "express",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js",
+    "debug": "nodemon --inspect src/index.js",
+    "format-code": "lint-staged",
+    "prepare": "husky"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1",
+    "mongoose": "^8.9.2",
+    "mongoose-slug-updater": "^3.3.0"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2",
+    "sass": "^1.83.0"
+  }
 }
