@@ -20,6 +20,9 @@ app.engine('hbs', exphbs.engine({ extname: '.hbs' }))
 app.set('view engine', 'hbs')
 app.set('views', path.join(__dirname, '/resource/views'))
 
+// Middleware handler data with post method from form 
+app.use(express.urlencoded())
+
 route(app)
 
 app.listen(port, () => console.log(`listening on localhost:${port}`))

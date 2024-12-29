@@ -1,0 +1,38 @@
+<div class="mt-4 mx-5">
+
+    <div class="row">
+        <h3 class="col-6 offset-3">Tạo khóa học</h3>
+        <form action="/courses/store" class="col-6 offset-3 mt-4" method="post">
+            <div class="mt-1">
+                <label for="name" class="form-label">Tên khóa học:</label>
+                <input class="form-control" name="name" id="name" type="text" placeholder="Tên khóa học"
+                    aria-label="default input example">
+            </div>
+
+            <div class="mt-4">
+                <label for="description" class="form-label">Mô tả:</label>
+                <input class="form-control" name="description" id="description" type="text" placeholder="Mô tả"
+                    aria-label="default input example">
+            </div>
+
+            <div class="mt-4">
+                <label for="videoId" class="form-label">Video id:</label>
+                <input class="form-control" name="videoId" id="videoId" type="text" placeholder="Video id"
+                    aria-label="default input example">
+            </div>
+
+            {{!-- <div class="mt-4">
+                <label for="slug" class="form-label">Slug:</label>
+                <input class="form-control" name="slug" id="slug" type="text" placeholder="Slug"
+                    aria-label="default input example">
+            </div> --}}
+
+            <div class="mt-4">
+                <label for="level" class="form-label">Độ khó:</label>
+                <input class="form-control" name="level" id="level" type="text" placeholder="Độ khó"
+                    aria-label="default input example">
+            </div>
+            <button type="submit" class="btn btn-success mt-2">Tạo khóa học</button>
+        </form>
+    </div>
+</div>
